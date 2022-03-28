@@ -1,4 +1,4 @@
-setwd("C://Users//123//Desktop//ooo//oo//Data//TCGA-Data//1.mRNAmerge")
+setwd("../mRNA")
 ###整理数据
 rt=read.table("fpkm.txt",sep="\t",header=T,check.names=F)                #读入并整理表达矩阵
 rt=t(rt)                                                                 #转置
@@ -12,7 +12,7 @@ merge_os=merge(rt,cli,by="id",all=F)                                     #合并
 write.csv(merge_os,"OS.csv")
 
 ###开始分析
-setwd("C:/Users/123/Desktop/ooo/oo/Data/TCGA-Data/4.OS")
+setwd("./")
 os=read.table("OS.txt",sep="\t",header=T,check.names=F,row.name=1)       #带有表达量,生存时间和状态
 os$futime=os$futime/30    #将时间坐标改为月
 library(survival)
