@@ -1,2 +1,2 @@
-1. We need to download and transfer the raw data into available form (http://portal.gdc.cancer.gov), so Perl script is neccesary( you will see in folders which also have raw data), Then, we can use R project to plot.
-2. There is a example data in the KM floder, you can run the R project directly and get a plot.
+1.我们需要下载原始数据并将其转换为可用形式(http://portal.gdc.cancer.gov)，所以Perl脚本是必要的。
+2.KM floder中有一个示例数据，您可以直接运行R并获得一个图片。
